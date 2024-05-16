@@ -1,4 +1,4 @@
-from flask_cors import CORS
+#from flask_cors import CORS
 from flask import Flask, render_template, request, jsonify, url_for
 import pandas as pd
 import soundfile as sf
@@ -39,7 +39,7 @@ res = None
 app = Flask(__name__)
 
 
-CORS(app)
+#CORS(app)
 @app.route('/')
 def home():
     datetoday2 = datetime.datetime.now()
